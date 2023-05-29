@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  min-height: 100vh;
+}
+
+.page_title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 0 16px;
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

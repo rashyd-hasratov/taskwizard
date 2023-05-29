@@ -1,0 +1,121 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add_link {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background-color: #3399ff;
+
+  transition: background-color 0.2s linear;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 60%;
+    height: 0;
+    padding-bottom: 60%;
+
+    background-image: url('../../assets/icons/icon-add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: #4da6ff;
+  }
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 60px;
+  gap: 32px;
+
+  margin-bottom: 64px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.filterDateInput {
+  width: 100%;
+
+  padding: 16px 24px;
+
+  font-family: inherit;
+  font-weight: 400;
+  text-align: left;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+.clear_filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.clear_filter_button {
+  position: relative;
+
+  flex-grow: 1;
+
+  border-radius: 8px;
+  background-color: #3399ff;
+
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #4da6ff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+
+    background-image: url('../../assets/icons/icon-clear.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.clear_filter_button_disabled {
+  background-color: #4da6ff;
+  pointer-events: none;
+}

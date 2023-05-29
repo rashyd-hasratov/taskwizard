@@ -1,0 +1,15 @@
+.boardline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}

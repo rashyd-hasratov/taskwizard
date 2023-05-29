@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input_label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 700;
+}
+
+.input {
+  padding: 16px 24px;
+  font-family: inherit;
+
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+.input_date {
+  max-width: max-content;
+}
+
+.submit_button {
+  padding: 16px 24px;
+  max-width: max-content;
+
+  font-weight: 700;
+  font-family: inherit;
+  color: #f2f2f2;
+
+  border-radius: 8px;
+  background-color: #29a329;
+
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #2eb82e;
+  }
+}
+
+.success_text {
+  font-size: 24px;
+};
